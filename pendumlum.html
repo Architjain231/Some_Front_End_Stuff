@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *
+    {
+        padding:0;
+        margin:0;
+        box-sizing:border-box;
+    }
+.centerdiv
+{
+width:100vw;
+height:90vh;
+display:grid;
+place-items:center;
+background:rgba(21,132,21,0.4);
+}
+.maindiv
+{
+width:60%;
+height:60%;
+background:whitesmoke;
+border:2px solid rgb(131, 226, 43);
+box-shadow:0px 0px 5px 2px rgb(131, 226, 43);
+display:flex;
+    justify-content:center;
+/* border-bottom:10px; */
+}
+.centerdiv .maindiv span{
+    height:70%;
+    width:4px;
+    background:gray;
+    display:block;
+   margin:0 1.4rem;
+   position:relative;
+   transform-origin: top;
+}
+span::before{
+    content:"";
+    width:50px;
+    height:50px;
+    background: gray;
+    border-radius:50%;
+    position:absolute;
+    bottom:0px;
+    transform:translateX(-50%);
+
+}
+span:first-child{
+    animation-name:animate;
+    animation-duration:2s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+}
+span:last-child{
+    animation-name:animation;
+    animation-duration:2s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+    -moz-animation-delay: 1s;
+}
+@keyframes animate
+{
+0%
+{
+ transform:rotate(0deg);
+}
+25%
+{
+ transform:rotate(50deg);
+}
+50%
+{
+    transform:rotate(0deg);
+}
+100%{
+transform:rotate(0deg);
+}
+}
+@keyframes animation
+{
+0%
+{
+ transform:rotate(0deg);
+}
+25%
+{
+ transform:rotate(-50deg);
+}
+50%
+{
+    transform:rotate(0deg);
+}
+100%{
+transform:rotate(0deg);
+}
+}
+.footer
+{
+    width:100vw;
+    height:10vh;
+    text-align:center;
+    font-size:55px;
+    color:rgb(215, 1, 252);
+   
+    background:rgba(12, 21, 64, 0.4);
+}
+.footer p{
+    animation-name:name;
+    animation-duration:2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    position:absolute;
+}
+@keyframes name
+{
+0%
+{
+left:-1000px;
+}
+100%
+{
+   left:45%;
+}
+}
+</style>
+<body>
+    <div class="centerdiv">
+        <div class="maindiv">
+         <span></span>
+         <span></span>
+         <span></span>
+         <span></span>
+         <span></span>
+         <span></span>
+         <span></span>
+         <span></span>
+        </div>
+        
+    </div>
+    <div class="footer">
+        <p>Archit Jain</p>
+            </div>
+</body>
+</html>

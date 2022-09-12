@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .main-div {
+        width: 100vw;
+        height: 100vh;
+        background: darkgoldenrod;
+        display: grid;
+        place-items: center;
+    }
+
+    .center-div {
+        width: 430px;
+        height: 260px;
+        display: grid;
+        place-items: center;
+        background:lightyellow;
+        border-radius:10px;
+        position:relative;
+    }
+    .center-div::after{
+        content:"";
+        width:26px;
+        height:10px;
+ position:absolute;
+  background:lime;
+    /* transform:translateY(-100%);
+    transform:translateX(-100%); */
+    top:-10px;
+    left:15px;
+    }
+</style>
+
+<body>
+    <div class="main-div">
+        <div class="center-div">
+            <div class="circle">
+                
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

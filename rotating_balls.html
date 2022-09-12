@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.main-div
+{
+    width:100vw;
+    height:100vh;
+    position:relative;
+   
+   background:cornsilk;
+}
+.center-div
+{
+    width:150px;
+    height:150px;
+    /* background:aquamarine; */
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    position:relative;
+}
+span{
+    height:50px;
+    width:50px;
+    background-color: rgb(19, 59, 105);
+    animation-name:animate;
+    animation-duration:2s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+    position:absolute;
+    border-radius:50%;
+}
+span:first-child{
+animation-delay:0.66s;
+}
+span:last-child{
+animation-delay:1.3s;
+}
+@keyframes animate{
+    0%
+    {
+      top:0px;
+      left:0px;
+    }
+    12.5%
+    {
+        top:0px;
+      left:70px;
+    }
+    25%
+    {
+        top:0px;
+      left:70px;
+    }
+    37.5%
+    {
+        top:70px;
+      left:70px;
+    }
+    50%
+    {
+        top:70px;
+      left:70px;
+    }
+    62.5%
+    {
+        top:70px;
+      left:0px;
+    }
+    75%
+    {
+        top:70px;
+      left:0px;
+    }
+    87.5%
+    {
+        top:0px;
+      left:0px;
+    }
+    100%
+    {
+        top:0px;
+      left:0px;
+    }
+    
+}
+</style>
+<body>
+    <div class="main-div">
+      <div class="center-div">
+      <span></span>
+      <span></span>
+      <span></span>
+      </div>
+    </div>
+</body>
+</html>

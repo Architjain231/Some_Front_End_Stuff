@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+*
+{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    text-transform:capitalize;
+}
+.main_div
+{
+width:100vw;
+height:100vh;
+display:grid;
+place-items:center;
+}
+.center_div
+{
+height:60%;
+width:60%;
+display:grid;
+place-items:center;
+background:aquamarine;
+font-size:50px;
+letter-spacing:8px;
+text-transform:uppercase;
+position:relative;
+}
+h1{
+animation-name:animate;
+animation-duration:0.4s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+}
+@keyframes animate{
+0%
+{
+
+}
+90%
+{
+    
+}
+100%
+{
+    color: yellow;
+}
+}
+p
+{
+    position:relative;
+}
+p::before{
+content:"";
+width:100px;
+height:20px;
+background:blueviolet;
+position:absolute;
+top:0px;
+left:0px;
+}
+</style>
+<body>
+    <div class="main_div">
+        <div class="center_div">
+           <h1>Awesome</h1>
+        </div>
+    </div>
+</body>
+</html>
